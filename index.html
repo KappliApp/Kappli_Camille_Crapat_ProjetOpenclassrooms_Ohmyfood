@@ -10,17 +10,17 @@
 <body>
 <!----------------------------------------------------Header--------------------------------------------------------------------------->
     <header>
-        <div>
-            <a href="index.html"><img src="img/logo/ohmyfood.png" alt="Logo de Ohmyfood"></a>
+        <div class=".header__logo">
+            <a href="index.html"><img src="public/img/logo/ohmyfood.png" alt="Logo de Ohmyfood"></a>
         </div>
     </header>
 
 <!-----------------------------------------------lieu et exploration------------------------------------------------------------------->
-    <section>
-        <div>
+    <section class=".introduction">
+        <div class=".introduction__search">
             <p><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
         </div>
-        <div>
+        <div class=".introduction__information">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             <button>Explorer nos restaurants</button>
@@ -28,18 +28,18 @@
     </section>
 
 <!----------------------------------------------------notice--------------------------------------------------------------------------->
-    <section>
+    <section class=".gridInstructions">
         <h1>Fonctionnement</h1>
-        <div>
-            <div>
+        <div class=".instructions">
+            <div class=".instructions__instruction">
                 <p><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</p>
                 <span>1</span>
             </div>
-            <div>
+            <div class=".instructions__instruction">
                 <p><i class="fas fa-list"></i> Choisissez un restaurant</p>
                 <span>2</span>
             </div>
-            <div>
+            <div class=".instructions__instruction .instructions--purpleBackground">
                 <p><i class="fas fa-store"></i> Choisissez un restaurant</p>
                 <span>3</span>
             </div>
@@ -47,78 +47,80 @@
     </section>
 
 <!------------------------------------------------Restaurants------------------------------------------------------------------------->
-    <section>
+    <section class=".gridRestaurant">
         <h1>Restaurants</h1>
-        <a href="la-palette-du-gout.html">
-            <figure>
-                <div>
-                    <img src="img/restaurants/la-palette-du-goût.jpg" alt="Photo du restaurant La palette du goût">
-                    <div>
-                        <p>Nouveau</p>
+        <div class=".restaurants">
+            <a href="la-palette-du-gout.html">
+                <figure class=".restaurant">
+                    <div class=".restaurant__image">
+                        <img src="public/img/restaurants/la-palette-du-goût.jpg" alt="Photo du restaurant La palette du goût">
+                        <div class=".restaurant__news">
+                            <p>Nouveau</p>
+                        </div>
                     </div>
-                </div>
-                <figcaption>
-                    <div>
-                        <h2>La palette du goût</h2>
-                        <p>Ménilmontant</p>
+                    <figcaption>
+                        <div class=".restaurant__description">
+                            <h2>La palette du goût</h2>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class=".restaurant__heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="la-note-enchantee.html">
+                <figure class=".restaurant">
+                    <div class=".restaurant__image">
+                        <img src="public/img/restaurants/la-note-enchantee.jpg" alt="Photo du restaurant La note enchantée">
+                        <div class=".restaurant__news">
+                            <p>Nouveau</p>
+                        </div>
                     </div>
-                    <div>
-                        <i class="far fa-heart"></i>
+                    <figcaption>
+                        <div class=".restaurant__description">
+                            <h2>La note enchantée</h2>
+                            <p>Charonne</p>
+                        </div>
+                        <div class=".restaurant__heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="a-la-francaise.html">
+                <figure class=".restaurant">
+                    <div class=".restaurant__image">
+                        <img src="public/img/restaurants/a-la-francaise.jpg" alt="Photo du restaurant A la française">
                     </div>
-                </figcaption>
-            </figure>
-        </a>
-        <a href="la-note-enchantee.html">
-            <figure>
-                <div>
-                    <img src="img/restaurants/la-note-enchantee.jpg" alt="Photo du restaurant La note enchantée">
-                    <div>
-                        <p>Nouveau</p>
+                    <figcaption>
+                        <div class=".restaurant__description">
+                            <h2>A la française</h2>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <div class=".restaurant__heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="le-delice-des-sens.html">
+                <figure class=".restaurant">
+                    <div class=".restaurant__image">
+                        <img src="public/img/restaurants/le-delice-des-sens.jpg" alt="Photo du restaurant Le délice des sens">
                     </div>
-                </div>
-                <figcaption>
-                    <div>
-                        <h2>La note enchantée</h2>
-                        <p>Charonne</p>
-                    </div>
-                    <div>
-                        <i class="far fa-heart"></i>
-                    </div>
-                </figcaption>
-            </figure>
-        </a>
-        <a href="a-la-francaise.html">
-            <figure>
-                <div>
-                    <img src="img/restaurants/a-la-francaise.jpg" alt="Photo du restaurant A la française">
-                </div>
-                <figcaption>
-                    <div>
-                        <h2>A la française</h2>
-                        <p>Cité Rouge</p>
-                    </div>
-                    <div>
-                        <i class="far fa-heart"></i>
-                    </div>
-                </figcaption>
-            </figure>
-        </a>
-        <a href="le-delice-des-sens.html">
-            <figure>
-                <div>
-                    <img src="img/restaurants/le-delice-des-sens.jpg" alt="Photo du restaurant Le délice des sens">
-                </div>
-                <figcaption>
-                    <div>
-                        <h2>Le délice des sens</h2>
-                        <p>Folie-Méricourt</p>
-                    </div>
-                    <div>
-                        <i class="far fa-heart"></i>
-                    </div>
-                </figcaption>
-            </figure>
-        </a>
+                    <figcaption>
+                        <div class=".restaurant__description">
+                            <h2>Le délice des sens</h2>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <div class=".restaurant__heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
     </section>
 
 <!-------------------------------------------------Footer---------------------------------------------------------------------------->

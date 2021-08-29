@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 - Dynamisez une page web avec des animations CSS",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daigerlittle/CamilleCrapat_3_21082021.git"
+  },
+  "author": "Camille CRAPAT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daigerlittle/CamilleCrapat_3_21082021/issues"
+  },
+  "homepage": "https://github.com/daigerlittle/CamilleCrapat_3_21082021#readme"
+}
