@@ -3,10 +3,29 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-background: (
+    introduction:  #eaeaea,
+    section: #f6f6f6,
+    instructions:  #f5edff,
+    footer: #353535, 
+);
+$color-basic: (
+    black: #000,
+    white: #fff,
+);
+
 
 /* Definition of breakpoint */
 
-$breakpoint-min: (
-    tablet: 667px,
-    desktop: 1024px,
-)
+$breakpoint: (
+    smartphone: 666px, /* max-width */
+    tablet: 667px, /* min width */
+    desktop: 1024px, /* min width */
+);
+
+/* font-variable */
+
+
+$font-title: "Shrikhand";
+$font-text: "Roboto";
+$font-error: Arial, sans-serif;
