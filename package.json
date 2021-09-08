@@ -4,7 +4,7 @@
   "description": "Projet 3 - Dynamisez une page web avec des animations CSS",
   "main": "index.html",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:public/css/style.css"
   },
   "repository": {
     "type": "git",
