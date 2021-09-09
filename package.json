@@ -2,9 +2,10 @@
   "name": "ohmyfood",
   "version": "1.0.0",
   "description": "Projet 3 - Dynamisez une page web avec des animations CSS",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss publics/css/styles.css",
+    "prefix": "postcss ./publics/css/styles.css --use autoprefixer -d ./publics/css/"
   },
   "repository": {
     "type": "git",
