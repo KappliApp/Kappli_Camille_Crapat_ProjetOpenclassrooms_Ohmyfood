@@ -1,0 +1,77 @@
+/* Color Variable */
+/* Definition of breakpoint */
+/* font-variable */
+.header__logo img, .gridRestaurant, .gridInstructions, .introduction {
+  width: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Add font parameter */
+@font-face {
+  font-family: "Shrikhand";
+  src: url(../../publics/font/Shrikhand-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../../publics/font/Roboto-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../../publics/font/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Roboto";
+}
+
+.introduction__search {
+  height: 51px;
+  background-color: #eaeaea;
+}
+.introduction__information {
+  height: 289px;
+  background-color: #f6f6f6;
+}
+
+.gridInstructions {
+  height: 441px;
+}
+.gridInstructions .instructions__instruction {
+  height: 71px;
+  background-color: #f6f6f6;
+}
+
+.gridRestaurant {
+  height: 1231px;
+  background-color: #f6f6f6;
+}
+.gridRestaurant .restaurant {
+  height: 251px;
+  background-color: #fff;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 50%;
+  height: 63px;
+  margin: auto;
+}
+.header__logo img {
+  margin: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -2,17 +2,22 @@
 
 @font-face {
     font-family: "Shrikhand";
-    src: url(../../public/font/Shrikhand-Regular.ttf);
+    src: url(../../publics/font/Shrikhand-Regular.ttf);
     font-weight: normal;
 }
 @font-face {
     font-family: "Roboto";
-    src: url(../../public/font/Roboto-Regular.ttf);
+    src: url(../../publics/font/Roboto-Regular.ttf);
     font-weight: normal;
 }
 @font-face {
     font-family: "Roboto";
-    src: url(../../public/font/Roboto-Bold.ttf);
+    src: url(../../publics/font/Roboto-Bold.ttf);
     font-weight: bold;
 }
-
+a{
+    text-decoration: none;
+}
+p{
+    font-family: $font-text;
+}

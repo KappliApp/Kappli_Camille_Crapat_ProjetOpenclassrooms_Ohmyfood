@@ -1,0 +1,28 @@
+.introduction{
+    @extend %width-base;
+    &__search{
+        height: 51px;
+        background-color: map-get($color-background, introduction);
+    }
+    &__information{
+        height: 289px;
+        background-color: map-get($map: $color-background, $key: section );
+    }
+}
+.gridInstructions{
+    @extend %width-base;
+    height: 441px;
+    .instructions__instruction{
+        height: 71px;
+        background-color: map-get($map: $color-background, $key: section);
+    }
+}
+.gridRestaurant{
+    @extend %width-base;
+    height: 1231px;
+    background-color: map-get($map: $color-background, $key: section);
+    .restaurant{
+        height: 251px;
+        background-color: map-get($map: $color-basic, $key: white);
+    }
+}

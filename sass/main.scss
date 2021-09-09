@@ -1,7 +1,10 @@
-@import "./base/typography";
-@import "./layout/header";
-@import "./layout/footer";
-@import "./pages/index";
-@import "./pages/restaurants";
-@import "./utils/variables";
-@import "./utils/mixins";
+@import "utils/_variables.scss";
+@import "utils/_mixins.scss";
+@import "utils/_placeholders.scss";
+@import "base/_reset.scss";
+@import "base/_typography.scss";
+@import "pages/_index.scss";
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+@import "pages/_restaurants.scss";
+

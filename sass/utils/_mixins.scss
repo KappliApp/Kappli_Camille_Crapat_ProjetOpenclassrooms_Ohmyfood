@@ -13,3 +13,10 @@
         @content;
     }
 }
+@mixin flex ($direction, $justify-content, $align-items, $wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-wrap: $wrap;
+}
