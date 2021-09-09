@@ -189,11 +189,49 @@ button {
 .gridRestaurant h2 {
   margin-left: 20px;
 }
+.gridRestaurant .restaurants {
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.gridRestaurant .restaurants a {
+  text-decoration: none;
+  width: 90%;
+  height: 250px;
+  margin: auto;
+  padding: 0;
+}
 .gridRestaurant .restaurant {
-  border-radius: 10px;
+  width: 100%;
+  height: 250px;
+  margin: 20px auto 0 auto;
+  padding: 0;
+  border-radius: 15px;
   box-shadow: 0px 6px 6px #c3c3c3;
   height: 250px;
   background-color: #fff;
+  overflow: hidden;
+}
+.gridRestaurant .restaurant__image {
+  width: 100%;
+  height: 175px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.gridRestaurant .restaurant__image img {
+  width: 100%;
+  object-fit: contain;
+}
+.gridRestaurant .restaurant figcaption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .header__logo {

@@ -83,10 +83,33 @@
     h2{
         margin-left: 20px;
     }
+    .restaurants{
+        height: 1100px;
+        @include flex(column, space-between, center, nowrap);
+        a{
+            text-decoration: none;
+            @include base(90%, 250px, auto, 0);
+        }
+    }
     .restaurant{
-        @include border(10px);
+        @include base (100%, 250px, 20px auto 0 auto, 0);
+        @include border(15px);
         @include shadow(darken(map-get($color-background, section), 20%));
         height: 250px;
         background-color: map-get($map: $color-basic, $key: white);
+        overflow: hidden;
+        &__image{
+            @include base(100%, 175px, 0, 0);
+            overflow: hidden;
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        figcaption{
+            @include flex (row, space-around, center, nowrap);
+        }
+
     }
+    
 }
