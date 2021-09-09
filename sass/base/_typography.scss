@@ -19,14 +19,23 @@ a{
     text-decoration: none;
 }
 h1{
-    font-family: $font-title;
+    font-family: $font-title, $font-error;
+    margin: 0;
+    padding: 0;
 }
 h2, h3, h4{
-    font-family: $font-text;
+    font-family: $font-text, $font-error;
+    font-size: 27px;
+    margin: 0;
+    padding: 0;
 }
 p{
-    font-family: $font-text;
+    font-family: $font-text, $font-error;
+    font-size: 18px;
 }
 input{
-    font-family: $font-text;
+    font-family: $font-text, $font-error;
+}
+button{
+    font-family: $font-text, $font-error;
 }

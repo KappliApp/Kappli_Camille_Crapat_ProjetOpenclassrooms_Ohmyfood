@@ -1,0 +1,15 @@
+button{
+    @include base(auto, 50px, 16px auto, 0 20px);
+    line-height: 50px;
+    @include border(30px);
+    border: none;
+    @include color-button($color-primary, $color-secondary);
+    color: map-get($map: $color-basic, $key: white );
+    font-size : 16px;
+    cursor: pointer;
+    @include shadow(darken(map-get($color-background, section), 20%));
+    &:hover{
+        @include color-button(lighten($color-primary, 10%), lighten($color-secondary, 10%));
+        color: darken(map-get($color-basic, white), $amount: 50%);
+    }
+}

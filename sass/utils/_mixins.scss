@@ -26,3 +26,12 @@
     margin: $margin;
     padding: $padding;
 }
+@mixin border ($taille){
+    border-radius: $taille;
+}
+@mixin shadow ($color) {
+    box-shadow: 0px 6px 6px $color;
+}
+@mixin color-button ($color-primary, $color-secondary) {
+    background: linear-gradient(to right bottom, $color-secondary, $color-primary);
+}
