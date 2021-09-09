@@ -20,3 +20,9 @@
     align-items: $align-items;
     flex-wrap: $wrap;
 }
+@mixin base ($width, $height, $margin, $padding){
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+}

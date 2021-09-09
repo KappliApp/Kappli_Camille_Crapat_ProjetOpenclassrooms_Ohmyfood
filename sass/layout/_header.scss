@@ -1,11 +1,8 @@
 .header__logo{
     @include flex (row, center, center, nowrap);
-    width: 50%;
-    height: 63px;
-    margin: auto;
+    @include base (50%, 3.937em, auto, 0);
     img{
         @extend %width-base;
-        margin: auto;
     }
     
     

@@ -30,33 +30,76 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-family: "Shrikhand";
+}
+
+h2, h3, h4 {
+  font-family: "Roboto";
+}
+
 p {
   font-family: "Roboto";
 }
 
+input {
+  font-family: "Roboto";
+}
+
 .introduction__search {
-  height: 51px;
+  height: 3.125em;
   background-color: #eaeaea;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  box-shadow: inset 0px 3px 2px #d0d0d0;
+}
+.introduction form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 50%;
+}
+.introduction form label {
+  width: 15%;
+  height: 3.125em;
+  margin: 0;
+  padding: 0;
+  line-height: 3.125em;
+}
+.introduction form input {
+  width: 60%;
+  height: 3.125em;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  text-align: center;
+  font-size: 1em;
 }
 .introduction__information {
-  height: 289px;
+  height: 290px;
   background-color: #f6f6f6;
 }
 
 .gridInstructions {
-  height: 441px;
+  height: 440px;
 }
 .gridInstructions .instructions__instruction {
-  height: 71px;
+  height: 70px;
   background-color: #f6f6f6;
 }
 
 .gridRestaurant {
-  height: 1231px;
+  height: 1230px;
   background-color: #f6f6f6;
 }
 .gridRestaurant .restaurant {
-  height: 251px;
+  height: 250px;
   background-color: #fff;
 }
 
@@ -67,11 +110,9 @@ p {
   align-items: center;
   flex-wrap: nowrap;
   width: 50%;
-  height: 63px;
+  height: 3.937em;
   margin: auto;
-}
-.header__logo img {
-  margin: auto;
+  padding: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
