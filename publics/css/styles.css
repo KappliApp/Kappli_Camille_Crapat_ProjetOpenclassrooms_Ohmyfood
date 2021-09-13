@@ -1,10 +1,6 @@
 /* Color Variable */
 /* Definition of breakpoint */
 /* font-variable */
-.header__logo img, .introduction {
-  width: 100%;
-}
-
 body {
   padding: 0;
   margin: 0;
@@ -30,45 +26,46 @@ body {
   src: url(../../publics/font/Roboto-Bold.ttf);
   font-weight: bold;
 }
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
 a {
   text-decoration: none;
 }
 
-h1 {
+h1, h4 {
   font-family: "Shrikhand", Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-h2, h3, h4 {
-  font-family: "Roboto", Arial, sans-serif;
+h2, h3 {
   font-size: 27px;
   margin: 0;
   padding: 0;
 }
 
 p {
-  font-family: "Roboto", Arial, sans-serif;
   font-size: 18px;
 }
 
-input {
-  font-family: "Roboto", Arial, sans-serif;
-}
-
-button {
-  font-family: "Roboto", Arial, sans-serif;
+li {
+  list-style: none;
 }
 
 .introduction__search {
-  height: 3.125em;
-  background-color: #eaeaea;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  box-shadow: inset 0px 3px 2px #d0d0d0;
+  width: 100%;
+  height: 3.125em;
+  margin: 0;
+  padding: 0;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 3px 2px #d1d1d1;
 }
 .introduction form {
   display: flex;
@@ -77,17 +74,20 @@ button {
   align-items: center;
   flex-wrap: nowrap;
   width: 50%;
+  height: 3.125em;
+  margin: auto;
+  padding: 0;
 }
 .introduction form label {
   width: 15%;
-  height: 3.125em;
+  height: auto;
   margin: 0;
   padding: 0;
   line-height: 3.125em;
 }
 .introduction form input {
   width: 60%;
-  height: 3.125em;
+  height: auto;
   margin: 0;
   padding: 0;
   background: none;
@@ -96,11 +96,11 @@ button {
   font-size: 1em;
 }
 .introduction__information {
-  text-align: center;
   width: 100%;
   height: 290px;
   margin: 0;
   padding: 30px 30px;
+  text-align: center;
   background-color: #f6f6f6;
 }
 .introduction__information p {
@@ -137,27 +137,27 @@ button {
   height: 70px;
   margin: 0 auto;
   padding: 0;
+  background-color: #f6f6f6;
   border-radius: 20px;
   box-shadow: 0px 6px 6px #c3c3c3;
-  background-color: #f6f6f6;
 }
 .gridInstructions .instructions__instruction span {
-  text-align: center;
   position: relative;
   left: -15px;
-  background-color: #9356DC;
   width: 25px;
   height: 25px;
   margin: 0;
   padding: 0;
-  border-radius: 25px;
   line-height: 25px;
+  background-color: #9356DC;
+  border-radius: 25px;
   color: #fff;
+  text-align: center;
 }
 .gridInstructions .instructions__instruction__list {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-wrap: nowrap;
   width: auto;
@@ -168,9 +168,9 @@ button {
   font-size: 16px;
 }
 .gridInstructions .instructions__instruction__list__ico {
+  margin: auto 25px auto 5px;
   font-size: 18px;
   color: #777777;
-  margin: auto 25px auto 5px;
 }
 .gridInstructions .instructions__instruction__list__ico--purple {
   color: #9356DC;
@@ -204,6 +204,9 @@ button {
   margin: auto;
   padding: 0;
 }
+.gridRestaurant .restaurants a:hover {
+  transform: scale(1.05);
+}
 .gridRestaurant .restaurant {
   width: 100%;
   height: 250px;
@@ -229,9 +232,12 @@ button {
 .gridRestaurant .restaurant figcaption {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+}
+.gridRestaurant .restaurant figcaption p {
+  margin: 0;
 }
 
 .header__logo {
@@ -245,6 +251,28 @@ button {
   margin: auto;
   padding: 0;
 }
+
+footer {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 20px;
+  background-color: #353535;
+  color: #fff;
+}
+footer ul {
+  width: auto;
+  height: auto;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+footer ul li {
+  margin-top: 5px;
+}
+footer ul a {
+  color: #fff;
+}
+
 button {
   width: auto;
   height: 50px;

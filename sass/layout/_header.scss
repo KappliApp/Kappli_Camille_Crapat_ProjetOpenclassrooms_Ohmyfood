@@ -1,9 +1,4 @@
 .header__logo{
     @include flex (row, center, center, nowrap);
     @include base (50%, 3.937em, auto, 0);
-    img{
-        @extend %width-base;
-    }
-    
-    
 }
