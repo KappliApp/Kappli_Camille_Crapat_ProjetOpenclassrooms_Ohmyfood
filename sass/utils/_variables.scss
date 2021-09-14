@@ -21,9 +21,9 @@ $color-basic: (
 /* Definition of breakpoint */
 
 $breakpoint: (
-    smartphone: 666px, /* max-width */
-    tablet: 667px, /* min width */
-    desktop: 1024px, /* min width */
+    small : 0px, 
+    medium : 667px, 
+    big : 1350px,
 );
 
 /* font-variable */

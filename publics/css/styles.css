@@ -54,7 +54,43 @@ li {
   list-style: none;
 }
 
-.introduction__search {
+@media screen and (min-width: 1350px) {
+  .app {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 667px) and (max-width: 1350px) {
+  .app {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .headerApp {
+    width: 25%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 667px) and (max-width: 1350px) {
+  .headerApp {
+    width: 35%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.search {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -67,7 +103,7 @@ li {
   background-color: #eaeaea;
   box-shadow: inset 0px 3px 2px #d1d1d1;
 }
-.introduction form {
+.search form {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -77,41 +113,60 @@ li {
   height: 3.125em;
   margin: auto;
   padding: 0;
+  text-align: center;
 }
-.introduction form label {
+@media screen and (min-width: 667px) and (max-width: 1350px) {
+  .search form {
+    width: 27%;
+    height: 3.125em;
+    margin: auto;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .search form {
+    width: 15%;
+    height: 3.125em;
+    margin: auto;
+    padding: 0;
+  }
+}
+.search form label {
   width: 15%;
   height: auto;
   margin: 0;
   padding: 0;
   line-height: 3.125em;
+  text-align: center;
 }
-.introduction form input {
+.search form input {
   width: 60%;
   height: auto;
   margin: 0;
   padding: 0;
   background: none;
   border: none;
-  text-align: center;
   font-size: 1em;
+  text-align: center;
 }
-.introduction__information {
+
+.introduction {
   width: 100%;
-  height: 290px;
+  height: auto;
   margin: 0;
   padding: 30px 30px;
   text-align: center;
   background-color: #f6f6f6;
 }
-.introduction__information p {
+.introduction p {
   color: #777777;
 }
 
 .gridInstructions {
   width: 100%;
-  height: 440px;
+  height: auto;
   margin: 0;
-  padding: 60px 0 0 0;
+  padding: 60px 0 50px 0;
 }
 .gridInstructions h2 {
   margin-left: 20px;
@@ -181,13 +236,34 @@ li {
 
 .gridRestaurant {
   width: 100%;
-  height: 1230px;
+  height: auto;
   margin: 0;
-  padding: 55px 0 0 0;
+  padding: 55px 0 50px 0;
   background-color: #f6f6f6;
+}
+@media screen and (min-width: 1350px) {
+  .gridRestaurant {
+    width: 75%;
+    height: auto;
+    margin: 0;
+    padding: 55px 20px 50px 20px;
+  }
+}
+@media screen and (min-width: 667px) and (max-width: 1350px) {
+  .gridRestaurant {
+    width: 65%;
+    height: auto;
+    margin: 0;
+    padding: 55px 20px 50px 20px;
+  }
 }
 .gridRestaurant h2 {
   margin-left: 20px;
+}
+@media screen and (min-width: 1350px) {
+  .gridRestaurant h2 {
+    margin-left: 0;
+  }
 }
 .gridRestaurant .restaurants {
   height: 1100px;
@@ -197,12 +273,54 @@ li {
   align-items: center;
   flex-wrap: nowrap;
 }
+@media screen and (min-width: 1350px) {
+  .gridRestaurant .restaurants {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+    width: auto;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 667px) and (max-width: 1350px) {
+  .gridRestaurant .restaurants {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+    width: auto;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+  }
+}
 .gridRestaurant .restaurants a {
   text-decoration: none;
   width: 90%;
   height: 250px;
   margin: auto;
   padding: 0;
+}
+@media screen and (min-width: 1350px) {
+  .gridRestaurant .restaurants a {
+    width: 30%;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 667px) and (max-width: 1350px) {
+  .gridRestaurant .restaurants a {
+    width: 47%;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+  }
 }
 .gridRestaurant .restaurants a:hover {
   transform: scale(1.05);
@@ -214,7 +332,6 @@ li {
   padding: 0;
   border-radius: 15px;
   box-shadow: 0px 6px 6px #c3c3c3;
-  height: 250px;
   background-color: #fff;
   overflow: hidden;
 }
@@ -256,18 +373,18 @@ footer {
   width: 100%;
   height: auto;
   margin: 0;
-  padding: 20px;
+  padding: 25px 20px;
   background-color: #353535;
   color: #fff;
 }
 footer ul {
   width: auto;
   height: auto;
-  margin: 15px 0 0 0;
+  margin: 20px 0 0 0;
   padding: 0;
 }
 footer ul li {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 footer ul a {
   color: #fff;

@@ -1,11 +1,11 @@
 footer{
-    @include base(100%, auto, 0, 20px);
+    @include base(100%, auto, 0, 25px 20px);
     background-color: map-get($color-background, footer);
     color: map-get($color-basic,white);
     ul{
-        @include base (auto, auto, 15px 0 0 0, 0);
+        @include base (auto, auto, 20px 0 0 0, 0);
         li{
-            margin-top: 5px;
+            margin-top: 8px;
         }
         a{
             color: map-get($color-basic,white);

@@ -1,36 +1,59 @@
-.introduction{
-    &__search{
-        @include flex(row, center, center, nowrap);
-        @include base(100%, 3.125em, 0, 0);
-        background-color: map-get($color-background, introduction);
-        box-shadow: inset 0px 3px 2px darken(map-get($color-background, introduction), 10%);
+.app{
+    @include desktop-only{
+        @include flex(row, space-between, flex-start, nowrap);
     }
+    @include tablet-only{
+        @include flex(row, space-between, flex-start, nowrap);
+    }
+}
+.headerApp{
+    @include desktop-only{
+        @include base(25%, auto, 0, 0);
+    }
+    @include tablet-only{
+        @include base(35%, auto, 0, 0);
+    }
+}
+.search{
+    @include flex(row, center, center, nowrap);
+    @include base(100%, 3.125em, 0, 0);
+    background-color: map-get($color-background, introduction);
+    box-shadow: inset 0px 3px 2px darken(map-get($color-background, introduction), 10%);
     form{
         @include flex(row, center, center, nowrap);
         @include base(50%, 3.125em, auto, 0);
+        @include tablet-only{
+            @include base(27%, 3.125em, auto, 0);
+        }
+        @include desktop-only{
+            @include base(15%, 3.125em, auto, 0);
+        }
+        text-align: center;
         label{
             @include base (15%, auto, 0, 0);
             line-height: 3.125em;
+            text-align: center;
         }
         input{
             @include base (60%, auto, 0, 0);
             background: none;
             border: none;
-            text-align: center;
             font-size: 1em;
-        }
-    }
-    &__information{
-        @include base (100%, 290px, 0, 30px 30px);
-        text-align: center;
-        background-color: map-get($color-background, section );
-        p{
-            color: darken(map-get($color-basic, gray), 50%);
+            text-align: center;
         }
     }
 }
+.introduction{
+    @include base (100%, auto, 0, 30px 30px);
+    text-align: center;
+    background-color: map-get($color-background, section );
+    p{
+        color: darken(map-get($color-basic, gray), 50%);
+    }
+}
+
 .gridInstructions{
-    @include base(100%, 440px, 0, 60px 0 0 0);
+    @include base(100%, auto, 0, 60px 0 50px 0);
     h2{
         margin-left: 20px;
     }
@@ -76,17 +99,41 @@
     
 }
 .gridRestaurant{
-    @include base(100%, 1230px, 0, 55px 0 0 0);
+    @include base(100%, auto, 0, 55px 0 50px 0);
+    @include desktop-only{
+        @include base(75%, auto, 0, 55px 20px 50px 20px);
+    }
+    @include tablet-only{
+        @include base(65%, auto, 0, 55px 20px 50px 20px);
+    }
     background-color: map-get($map: $color-background, $key: section);
     h2{
+        @include desktop-only{
+            margin-left: 0;
+        }
         margin-left: 20px;
     }
     .restaurants{
         height: 1100px;
         @include flex(column, space-between, center, nowrap);
+        @include desktop-only{
+            @include flex(row, space-between, space-between, wrap);
+            @include base(auto,600px, 0, 0);
+        }
+        @include tablet-only{
+            @include flex(row, space-between, space-between, wrap);
+            @include base(auto,600px, 0, 0);
+        }
+        
         a{
             text-decoration: none;
             @include base(90%, 250px, auto, 0);
+            @include desktop-only{
+                @include base(30%, 250px, 0, 0);
+            }
+            @include tablet-only{
+                @include base(47%, 250px, 0, 0);
+            }
             &:hover{
                 transform: scale(1.05);
             }
@@ -96,7 +143,6 @@
         @include base (100%, 250px, 20px auto 0 auto, 0);
         @include border(15px);
         @include shadow(darken(map-get($color-background, section), 20%));
-        height: 250px;
         background-color: map-get($map: $color-basic, $key: white);
         overflow: hidden;
         &__image{
