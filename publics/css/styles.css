@@ -352,9 +352,22 @@ li {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+  width: auto;
+  height: 75px;
+  margin: auto;
+  padding: 10px;
+  color: #000;
 }
 .gridRestaurant .restaurant figcaption p {
-  margin: 0;
+  font-size: 16px;
+  color: #6a6a6a;
+  margin: 5px 0 0 0;
+}
+.gridRestaurant .restaurant figcaption h3 {
+  font-size: 20px;
+}
+.gridRestaurant .restaurant figcaption .heart {
+  font-size: 22px;
 }
 
 .header__logo {
