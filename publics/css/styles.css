@@ -63,7 +63,7 @@ li {
     flex-wrap: nowrap;
   }
 }
-@media screen and (min-width: 667px) and (max-width: 1350px) {
+@media screen and (min-width: 900px) and (max-width: 1350px) {
   .app {
     display: flex;
     flex-direction: row;
@@ -81,7 +81,7 @@ li {
     padding: 0;
   }
 }
-@media screen and (min-width: 667px) and (max-width: 1350px) {
+@media screen and (min-width: 900px) and (max-width: 1350px) {
   .headerApp {
     width: 35%;
     height: auto;
@@ -115,7 +115,7 @@ li {
   padding: 0;
   text-align: center;
 }
-@media screen and (min-width: 667px) and (max-width: 1350px) {
+@media screen and (min-width: 900px) and (max-width: 1350px) {
   .search form {
     width: 27%;
     height: 3.125em;
@@ -249,7 +249,7 @@ li {
     padding: 55px 20px 50px 20px;
   }
 }
-@media screen and (min-width: 667px) and (max-width: 1350px) {
+@media screen and (min-width: 900px) and (max-width: 1350px) {
   .gridRestaurant {
     width: 65%;
     height: auto;
@@ -286,7 +286,7 @@ li {
     padding: 0;
   }
 }
-@media screen and (min-width: 667px) and (max-width: 1350px) {
+@media screen and (min-width: 900px) and (max-width: 1350px) {
   .gridRestaurant .restaurants {
     display: flex;
     flex-direction: row;
@@ -314,7 +314,7 @@ li {
     padding: 0;
   }
 }
-@media screen and (min-width: 667px) and (max-width: 1350px) {
+@media screen and (min-width: 900px) and (max-width: 1350px) {
   .gridRestaurant .restaurants a {
     width: 47%;
     height: 250px;
