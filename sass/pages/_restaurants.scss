@@ -1,0 +1,30 @@
+.restaurantImg{
+    @include base(100%, 250px, 0, 0);
+    overflow: hidden;
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+.restaurantCard{
+    @include base(100%, auto, 0, 15px);
+    background-color: map-get($color-background, section);
+    &__heading{
+        @include flex(row, space-between, center, nowrap);
+    }
+    h2{
+        font-weight: map-get($font-weight, regular);
+        text-transform : uppercase;
+        font-size: 1.125em;
+        color: darken(map-get($color-background, section), 20%);
+    }
+    .menu{
+        background-color: map-get($color-basic, white);
+        @include border(20px);
+    }
+    .border{
+        width: 13%;
+        height: 3px;
+        background-color: $color-tertiary;
+    }
+}

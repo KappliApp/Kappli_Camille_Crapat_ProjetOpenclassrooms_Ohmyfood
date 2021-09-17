@@ -29,6 +29,18 @@ $breakpoint: (
 /* font-variable */
 
 
-$font-title: "Shrikhand";
-$font-text: "Roboto";
-$font-error: Arial, sans-serif;
+$font-family-title: "Shrikhand";
+$font-family-text: "Roboto";
+$font-family-error: Arial, sans-serif;
+
+$font-size-title-section: 1.688em;
+$font-size-title-figure: 1.25em;
+$font-size-basic: 1em;
+$font-size-paragraphe : 1.125em;
+$font-size-heart: 1.375em;
+$font-size-icone: 1.25em;
+
+$font-weight : (
+    regular : 400,
+    bold : bold,
+);
