@@ -60,6 +60,7 @@
         @include base(100%, auto, 0 0 40px 0, 0);
     }
     .menu{
+        overflow: hidden;
         @include base(100%, 70px, 14px 0 0 0, 10px);
         background-color: map-get($color-basic, white);
         @include border(20px);
@@ -77,6 +78,7 @@
             font-size: 1em;
             margin: 6px 0 0 0;
         }
+        
     }
     .border{
         @include base (13%, 3px, 8px 0 0 0, 0);
@@ -86,5 +88,24 @@
         width: 13%;
         height: 3px;
         background-color: $color-tertiary;
+    }
+    
+}
+.menu:hover > .menu__checked{
+    transform: translate(-110%, 0);
+    cursor: pointer;
+}
+.menu__checked{
+    transition: transform 330ms ease-in-out;
+    @include base(15%, 70px, 0, 0);
+    position: relative;
+    top: -58px;
+    left: 105%;
+    background-color: $color-tertiary;
+    line-height: 70px;
+    text-align: center;
+    &__ico{
+        font-size: 1.5em;
+        color: map-get($color-basic, white);
     }
 }
