@@ -2,8 +2,20 @@ footer{
     @include base(100%, auto, 0, 25px 20px);
     background-color: map-get($color-background, footer);
     color: map-get($color-basic,white);
+    @include desktop-only{
+        text-align: center;
+    }
+    @include tablet-only{
+        text-align: center;
+    }
     ul{
         @include base (auto, auto, 20px 0 0 0, 0);
+        @include desktop-only{
+            @include flex(row, space-around, center, nowrap);
+        }
+        @include tablet-only{
+            @include flex(row, space-around, center, nowrap);
+        }
         li{
             margin-top: 8px;
         }

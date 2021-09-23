@@ -76,6 +76,17 @@
                 color: map-get($color-basic,white);
                 text-align: center;
             }
+            &:hover{
+                @include desktop-only{
+                    background-color: map-get($color-background, instructions);
+                    cursor: pointer;
+                }
+                .instructions__instruction__list__ico{
+                    @include desktop-only{
+                        color: $color-primary;
+                    }
+                }
+            }
             &__list{
                 @include flex(row, start, center, nowrap);
                 @include base (auto, 70px, 0, 0);
@@ -87,11 +98,21 @@
                     color: darken(map-get($color-basic,gray), 50%);
                 }
                 &__ico--purple{
-                    color: $color-primary;
+                    @include smartphone-only{
+                        color: $color-primary;
+                    }
+                    @include tablet-only{
+                        color: $color-primary;
+                    }
                 }
                 }
                 &--purpleBackground{
-                    background-color: map-get($color-background, instructions);
+                    @include smartphone-only{
+                        background-color: map-get($color-background, instructions);
+                    }
+                    @include tablet-only{
+                        background-color: map-get($color-background, instructions);
+                    }
                 }
         
         }

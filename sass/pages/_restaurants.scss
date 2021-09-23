@@ -6,29 +6,49 @@
         object-fit: contain;
     }
 }
-.restaurantCard{
+.restaurants{
     position: relative;
     top: -35px;
     border-radius: 35px 35px 0 0;
     @include base(100%, auto, 0, 35px 15px 15px 15px);
     @include flex(column, space-between, center, nowrap);
-    @include desktop-only{
-        @include flex(row, space-between, center, nowrap);
-    }
     background-color: map-get($color-background, section);
     &__heading{
         width: 100%;
         @include flex(row, space-between, center, nowrap);
+        @include desktop-only{
+            @include flex(row, center, center, nowrap);
+        }
         margin-bottom: 45px;
         h1{
             margin: 0;
+            @include desktop-only{
+                margin-right: 25px;
+            }
         }
         p{
             margin: 0;
         }
     }
+    
+}
+.restaurantCard{
+    
+    @include desktop-only{
+        @include flex(row, space-between, center, nowrap);
+    }
+    @include tablet-only{
+        @include flex(row, space-between, center, nowrap);
+    }
+    @include base(100%, auto, 0, 0);
     &__menu{
         @include base(100%, auto, 0, 0);
+        @include desktop-only{
+            @include base (31%, auto, 0, 0);
+        }
+        @include tablet-only{
+            @include base (31%, auto, 0, 0);
+        }
     }
     h2{
         font-weight: map-get($font-weight, regular);
@@ -60,6 +80,9 @@
     }
     .border{
         @include base (13%, 3px, 8px 0 0 0, 0);
+        @include desktop-only{
+            @include base (8%, 3px, 8px 0 0 0, 0);
+        }
         width: 13%;
         height: 3px;
         background-color: $color-tertiary;
