@@ -10,6 +10,5 @@ button{
     @include shadow(darken(map-get($color-background, section), 20%));
     &:hover{
         @include color-button(lighten($color-primary, 10%), lighten($color-secondary, 10%));
-        color: darken(map-get($color-basic, white), $amount: 50%);
     }
 }

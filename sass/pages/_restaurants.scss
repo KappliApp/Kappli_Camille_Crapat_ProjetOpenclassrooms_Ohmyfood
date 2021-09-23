@@ -7,22 +7,59 @@
     }
 }
 .restaurantCard{
-    @include base(100%, auto, 0, 15px);
+    position: relative;
+    top: -35px;
+    border-radius: 35px 35px 0 0;
+    @include base(100%, auto, 0, 35px 15px 15px 15px);
+    @include flex(column, space-between, center, nowrap);
+    @include desktop-only{
+        @include flex(row, space-between, center, nowrap);
+    }
     background-color: map-get($color-background, section);
     &__heading{
+        width: 100%;
         @include flex(row, space-between, center, nowrap);
+        margin-bottom: 45px;
+        h1{
+            margin: 0;
+        }
+        p{
+            margin: 0;
+        }
+    }
+    &__menu{
+        @include base(100%, auto, 0, 0);
     }
     h2{
         font-weight: map-get($font-weight, regular);
         text-transform : uppercase;
         font-size: 1.125em;
-        color: darken(map-get($color-background, section), 20%);
+        color: darken(map-get($color-background, section), 30%);
+    }
+    .menus{
+        @include base(100%, auto, 0 0 40px 0, 0);
     }
     .menu{
+        @include base(100%, 70px, 14px 0 0 0, 10px);
         background-color: map-get($color-basic, white);
         @include border(20px);
+        &__information{
+            @include flex(row, space-between, center, nowrap);
+            &__price{
+                font-weight: map-get($font-weight, bold);
+            }
+        }
+        h3{
+            font-size: 1.150em;
+            margin: 0;
+        }
+        p{
+            font-size: 1em;
+            margin: 6px 0 0 0;
+        }
     }
     .border{
+        @include base (13%, 3px, 8px 0 0 0, 0);
         width: 13%;
         height: 3px;
         background-color: $color-tertiary;

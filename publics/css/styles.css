@@ -434,30 +434,93 @@ footer ul a {
 }
 
 .restaurantCard {
+  position: relative;
+  top: -35px;
+  border-radius: 35px 35px 0 0;
   width: 100%;
   height: auto;
   margin: 0;
-  padding: 15px;
+  padding: 35px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
   background-color: #f6f6f6;
 }
+@media screen and (min-width: 1350px) {
+  .restaurantCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
 .restaurantCard__heading {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 45px;
+}
+.restaurantCard__heading h1 {
+  margin: 0;
+}
+.restaurantCard__heading p {
+  margin: 0;
+}
+.restaurantCard__menu {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.restaurantCard h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  color: #aaaaaa;
+}
+.restaurantCard .menus {
+  width: 100%;
+  height: auto;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+.restaurantCard .menu {
+  width: 100%;
+  height: 70px;
+  margin: 14px 0 0 0;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.restaurantCard .menu__information {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
 }
-.restaurantCard h2 {
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 1.125em;
-  color: #c3c3c3;
+.restaurantCard .menu__information__price {
+  font-weight: bold;
 }
-.restaurantCard .menu {
-  background-color: #fff;
-  border-radius: 20px;
+.restaurantCard .menu h3 {
+  font-size: 1.15em;
+  margin: 0;
+}
+.restaurantCard .menu p {
+  font-size: 1em;
+  margin: 6px 0 0 0;
 }
 .restaurantCard .border {
+  width: 13%;
+  height: 3px;
+  margin: 8px 0 0 0;
+  padding: 0;
   width: 13%;
   height: 3px;
   background-color: #99E2D0;
@@ -479,7 +542,6 @@ button {
 }
 button:hover {
   background: linear-gradient(to right bottom, #fface8, #ae80e5);
-  color: gray;
 }
 
 /*# sourceMappingURL=styles.css.map */
