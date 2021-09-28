@@ -6,7 +6,7 @@
         object-fit: contain;
     }
 }
-.restaurants{
+.restaurantsPage{
     position: relative;
     top: -35px;
     border-radius: 35px 35px 0 0;
@@ -67,14 +67,20 @@
         &__information{
             @include flex(row, space-between, center, nowrap);
             &__price{
+                margin: 0 10px 0 10px;
                 font-weight: map-get($font-weight, bold);
+            }
+            &__information{
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
         }
         h3{
             font-size: 1.150em;
             margin: 0;
         }
-        p{
+        p{            
             font-size: 1em;
             margin: 6px 0 0 0;
         }
@@ -92,20 +98,30 @@
     
 }
 .menu:hover > .menu__checked{
-    transform: translate(-110%, 0);
+    transform: translateX(-100%);
     cursor: pointer;
 }
+.menu:hover > .menu__checked > .menu__checked__ico{
+    transform: rotate(1turn);
+}
+.menu:hover > .menu__information > .menu__information__price{
+    transform: translateX(-220%);
+}
+.menu__information__price{
+    transition: transform 450ms ease-in-out;
+}
 .menu__checked{
-    transition: transform 330ms ease-in-out;
-    @include base(15%, 70px, 0, 0);
+    transition: transform 450ms ease-in-out;
+    @include base(70px, 70px, 0 0 0 10px, 0);
     position: relative;
     top: -58px;
-    left: 105%;
+    left: 100%;
     background-color: $color-tertiary;
     line-height: 70px;
     text-align: center;
     &__ico{
         font-size: 1.5em;
+        transition: transform 450ms ease-in-out;
         color: map-get($color-basic, white);
     }
 }
