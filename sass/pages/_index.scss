@@ -155,9 +155,6 @@
             @include tablet-only{
                 @include base(47%, 250px, 0, 0);
             }
-            &:hover{
-                transform: scale(1.05);
-            }
         }
     }
     .restaurant{
@@ -181,18 +178,24 @@
             @include flex (row, space-between, center, nowrap);
             @include base(auto, 75px, auto, 10px);
             color: map-get($color-basic, black);
-            p{
-                font-size: $font-size-basic;
-                color: darken(map-get($color-basic, gray), 55%);
-                margin: 5px 0 0 0;
+            .restaurant__description{
+                @include base (90%, 55px, auto, auto);
+                p{
+                    font-size: $font-size-basic;
+                    color: darken(map-get($color-basic, gray), 55%);
+                    margin: 5px 0 0 0;
+                }
+                h3{
+                    font-size: $font-size-title-figure;
+                }
             }
-            h3{
-                font-size: $font-size-title-figure;
-            }
-            .heart{
-                font-size: $font-size-heart;
+            .restaurant__heart{
+                @include flex (row, center, center, nowrap);
+                position: relative;
+                @include base(10%, auto, auto, auto);
             }
         }
+        
         span{
             display: inline-block;
             position: relative;
@@ -207,5 +210,6 @@
         }
 
     }
+    
     
 }

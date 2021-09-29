@@ -54,6 +54,197 @@ li {
   list-style: none;
 }
 
+@keyframes spinner {
+  to {
+    visibility: hidden;
+    display: none;
+  }
+}
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader--small {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.spinner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  visibility: visible;
+  background-color: rgba(246, 246, 246, 0.95);
+  animation: spinner 0s 3s forwards;
+}
+.spinner .loader {
+  display: inline-block;
+  position: relative;
+}
+.spinner__loader {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50px;
+}
+.spinner__loader:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  border: 5px solid transparent;
+  border-top: 5px solid #9356DC;
+  border-radius: 50px;
+  animation: loader 1s linear infinite;
+}
+.spinner__loader--small {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  margin: 7px;
+}
+.spinner__loader--small:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  border: 5px solid transparent;
+  border-top: 5px solid #FF79DA;
+  border-radius: 35px;
+  animation: loader--small 1s linear infinite;
+}
+
+@keyframes heart {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 50%;
+  height: 3.937em;
+  margin: auto;
+  padding: 0;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 25px 20px;
+  background-color: #353535;
+  color: #fff;
+}
+@media screen and (min-width: 1350px) {
+  footer {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1350px) {
+  footer {
+    text-align: center;
+  }
+}
+footer ul {
+  width: auto;
+  height: auto;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+@media screen and (min-width: 1350px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1350px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+footer ul li {
+  margin-top: 8px;
+}
+footer ul a {
+  color: #fff;
+}
+
+button {
+  width: auto;
+  height: 50px;
+  margin: 16px auto;
+  padding: 0 20px;
+  line-height: 50px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 6px 6px #c3c3c3;
+}
+button:hover {
+  background: linear-gradient(to right bottom, #fface8, #ae80e5);
+}
+
+.restaurant__heart:hover > .heart--rempli {
+  visibility: visible;
+  transition-duration: 700ms;
+  color: transparent;
+}
+
+.restaurantsPage__heart:hover > .heart--rempli {
+  cursor: pointer;
+  visibility: visible;
+  transition-duration: 700ms;
+  color: transparent;
+}
+
+.heart {
+  position: relative;
+  font-size: 1.375em;
+}
+.heart--rempli {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  visibility: hidden;
+  position: absolute;
+  font-size: 1.375em;
+}
+
 @media screen and (min-width: 1350px) {
   .app {
     display: flex;
@@ -347,9 +538,6 @@ li {
     padding: 0;
   }
 }
-.gridRestaurant .restaurants a:hover {
-  transform: scale(1.05);
-}
 .gridRestaurant .restaurant {
   width: 100%;
   height: 250px;
@@ -386,16 +574,31 @@ li {
   padding: 10px;
   color: #000;
 }
-.gridRestaurant .restaurant figcaption p {
+.gridRestaurant .restaurant figcaption .restaurant__description {
+  width: 90%;
+  height: 55px;
+  margin: auto;
+  padding: auto;
+}
+.gridRestaurant .restaurant figcaption .restaurant__description p {
   font-size: 1em;
   color: #6a6a6a;
   margin: 5px 0 0 0;
 }
-.gridRestaurant .restaurant figcaption h3 {
+.gridRestaurant .restaurant figcaption .restaurant__description h3 {
   font-size: 1.25em;
 }
-.gridRestaurant .restaurant figcaption .heart {
-  font-size: 1.375em;
+.gridRestaurant .restaurant figcaption .restaurant__heart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 10%;
+  height: auto;
+  margin: auto;
+  padding: auto;
 }
 .gridRestaurant .restaurant span {
   display: inline-block;
@@ -411,146 +614,6 @@ li {
   color: #278870;
   font-weight: bold;
   text-align: center;
-}
-
-@keyframes spinner {
-  to {
-    visibility: hidden;
-    display: none;
-  }
-}
-@keyframes loader {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes loader--small {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
-}
-.spinner {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  visibility: visible;
-  background-color: rgba(246, 246, 246, 0.95);
-  animation: spinner 0s 3s forwards;
-}
-.spinner .loader {
-  display: inline-block;
-  position: relative;
-}
-.spinner__loader {
-  width: 50px;
-  height: 50px;
-  margin-right: 15px;
-  border-radius: 50px;
-}
-.spinner__loader:after {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  bottom: -5px;
-  right: -5px;
-  border: 5px solid transparent;
-  border-top: 5px solid #9356DC;
-  border-radius: 50px;
-  animation: loader 1s linear infinite;
-}
-.spinner__loader--small {
-  width: 35px;
-  height: 35px;
-  border-radius: 35px;
-  margin: 7px;
-}
-.spinner__loader--small:after {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  bottom: -5px;
-  right: -5px;
-  border: 5px solid transparent;
-  border-top: 5px solid #FF79DA;
-  border-radius: 35px;
-  animation: loader--small 1s linear infinite;
-}
-
-.header__logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  width: 50%;
-  height: 3.937em;
-  margin: auto;
-  padding: 0;
-}
-
-footer {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 25px 20px;
-  background-color: #353535;
-  color: #fff;
-}
-@media screen and (min-width: 1350px) {
-  footer {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 900px) and (max-width: 1350px) {
-  footer {
-    text-align: center;
-  }
-}
-footer ul {
-  width: auto;
-  height: auto;
-  margin: 20px 0 0 0;
-  padding: 0;
-}
-@media screen and (min-width: 1350px) {
-  footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-}
-@media screen and (min-width: 900px) and (max-width: 1350px) {
-  footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-}
-footer ul li {
-  margin-top: 8px;
-}
-footer ul a {
-  color: #fff;
 }
 
 .restaurantImg {
@@ -608,6 +671,18 @@ footer ul a {
 }
 .restaurantsPage__heading p {
   margin: 0;
+}
+.restaurantsPage__heart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 5%;
+  height: auto;
+  margin: auto;
+  padding: auto;
 }
 
 .restaurantCard {
@@ -753,24 +828,6 @@ footer ul a {
   font-size: 1.5em;
   transition: transform 450ms ease-in-out;
   color: #fff;
-}
-
-button {
-  width: auto;
-  height: 50px;
-  margin: 16px auto;
-  padding: 0 20px;
-  line-height: 50px;
-  border-radius: 30px;
-  border: none;
-  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  box-shadow: 0px 6px 6px #c3c3c3;
-}
-button:hover {
-  background: linear-gradient(to right bottom, #fface8, #ae80e5);
 }
 
 /*# sourceMappingURL=styles.css.map */

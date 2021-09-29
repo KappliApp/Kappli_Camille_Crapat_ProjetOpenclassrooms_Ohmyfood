@@ -30,6 +30,11 @@
             margin: 0;
         }
     }
+    &__heart{
+        @include flex (row, center, center, nowrap);
+        position: relative;
+        @include base(5%, auto, auto, auto);
+    }
     
 }
 .restaurantCard{
