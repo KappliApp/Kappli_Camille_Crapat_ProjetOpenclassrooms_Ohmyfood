@@ -148,17 +148,16 @@
         
         a{
             text-decoration: none;
-            @include base(90%, 250px, auto, 0);
-            @include desktop-only{
-                @include base(30%, 250px, 0, 0);
-            }
-            @include tablet-only{
-                @include base(47%, 250px, 0, 0);
-            }
         }
     }
     .restaurant{
-        @include base (100%, 250px, 20px auto 0 auto, 0);
+        @include base(90%, 250px, 20px auto 0 auto, 0);
+            @include desktop-only{
+                @include base(30%, 250px, 20px 0 0 0, 0);
+            }
+            @include tablet-only{
+                @include base(47%, 250px, 20px 0 0 0, 0);
+            }
         @include border(15px);
         @include shadow(darken(map-get($color-background, section), 20%));
         background-color: map-get($map: $color-basic, $key: white);
@@ -177,23 +176,30 @@
         figcaption{
             @include flex (row, space-between, center, nowrap);
             @include base(auto, 75px, auto, 10px);
-            color: map-get($color-basic, black);
-            .restaurant__description{
-                @include base (90%, 55px, auto, auto);
-                p{
-                    font-size: $font-size-basic;
-                    color: darken(map-get($color-basic, gray), 55%);
-                    margin: 5px 0 0 0;
-                }
-                h3{
-                    font-size: $font-size-title-figure;
+            a{
+                @include base(auto, 75px, auto 0, 0);
+                .restaurant__description{
+                    @include base (100%, 55px, 0, auto);
+                    color: map-get($color-basic, black);
+                    p{
+                        font-size: $font-size-basic;
+                        color: darken(map-get($color-basic, gray), 55%);
+                        margin: 5px 0 0 0;
+                    }
+                    h3{
+                        font-size: $font-size-title-figure;
+                    }
                 }
             }
             .restaurant__heart{
                 @include flex (row, center, center, nowrap);
                 position: relative;
-                @include base(10%, auto, auto, auto);
+                @include base(10%, auto, 0, auto);
             }
+        }
+        &:hover{
+            transform: scale(1.05);
+            cursor: pointer;
         }
         
         span{
