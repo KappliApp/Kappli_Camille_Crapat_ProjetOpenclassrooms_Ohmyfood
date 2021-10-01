@@ -84,19 +84,3 @@
         visibility: visible;
     }
 }
-@keyframes checked{
-    from{
-        max-width: 0;
-    }
-    to{
-        max-width: 70px;
-    }
-}
-@keyframes checked--turn{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}

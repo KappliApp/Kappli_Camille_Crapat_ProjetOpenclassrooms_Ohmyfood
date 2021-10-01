@@ -141,22 +141,6 @@ li {
     visibility: visible;
   }
 }
-@keyframes checked {
-  from {
-    max-width: 0;
-  }
-  to {
-    max-width: 70px;
-  }
-}
-@keyframes checked--turn {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 header {
   display: flex;
   flex-direction: row;
@@ -791,7 +775,9 @@ button:hover {
   flex-wrap: nowrap;
 }
 .restaurantCard .menu__price {
-  width: auto;
+  align-self: flex-end;
+  text-align: center;
+  width: 10%;
   height: auto;
   margin: 0;
   padding: 0;
@@ -799,7 +785,7 @@ button:hover {
   font-weight: bold;
 }
 .restaurantCard .menu__information {
-  width: auto;
+  width: 90%;
   height: auto;
   margin: 0;
   padding: 0;
