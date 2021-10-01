@@ -83,19 +83,19 @@
                 white-space: nowrap;
                 text-overflow: ellipsis;
             }
-            &__checked{
-                @include base(70px, 70px, 0 0 0 10px, 0);
-                position: relative;
-                top: -58px;
-                left: 100%;
-                background-color: $color-tertiary;
-                line-height: 70px;
-                text-align: center;
-                &__ico{
-                    font-size: 1.5em;
-                    transition: transform 450ms ease-in-out;
-                    color: map-get($color-basic, white);
-                }
+        }
+        &__checked{
+            @include base(70px, 70px, 0 0 0 10px, 0);
+            position: relative;
+            top: -58px;
+            left: 100%;
+            background-color: $color-tertiary;
+            line-height: 70px;
+            text-align: center;
+            &__ico{
+                font-size: 1.5em;
+                transition: transform 450ms ease-in-out;
+                color: map-get($color-basic, white);
             }
         }
         h3{
