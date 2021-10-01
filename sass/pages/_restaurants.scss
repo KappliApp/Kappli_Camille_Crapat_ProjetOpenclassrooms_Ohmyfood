@@ -8,9 +8,8 @@
 }
 .restaurantsPage{
     position: relative;
-    top: -35px;
     border-radius: 35px 35px 0 0;
-    @include base(100%, auto, 0, 35px 15px 35px 15px);
+    @include base(100%, auto, -35px 0 0 0, 35px 15px 35px 15px);
     @include flex(column, space-between, center, nowrap);
     background-color: map-get($color-background, section);
     &__heading{
