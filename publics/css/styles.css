@@ -793,7 +793,7 @@ button:hover {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.restaurantCard .menu__information__checked {
+.restaurantCard .menu__checked {
   width: 70px;
   height: 70px;
   margin: 0 0 0 10px;
@@ -805,7 +805,7 @@ button:hover {
   line-height: 70px;
   text-align: center;
 }
-.restaurantCard .menu__information__checked__ico {
+.restaurantCard .menu__checked__ico {
   font-size: 1.5em;
   transition: transform 450ms ease-in-out;
   color: #fff;
