@@ -141,6 +141,14 @@ li {
     visibility: visible;
   }
 }
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
 .header__logo {
   display: flex;
   flex-direction: row;
@@ -151,6 +159,14 @@ li {
   height: 3.937em;
   margin: auto;
   padding: 0;
+}
+.header__arrow {
+  position: absolute;
+  left: 15px;
+  font-size: 1.25em;
+}
+.header__arrow a {
+  color: #000;
 }
 
 footer {
@@ -635,7 +651,7 @@ button:hover {
   width: 100%;
   height: auto;
   margin: 0;
-  padding: 35px 15px 15px 15px;
+  padding: 35px 15px 35px 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -760,10 +776,18 @@ button:hover {
   flex-wrap: nowrap;
 }
 .restaurantCard .menu__information__price {
+  width: 10%;
+  height: auto;
+  margin: 0;
+  padding: 0;
   margin: 0 10px 0 10px;
   font-weight: bold;
 }
 .restaurantCard .menu__information__information {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

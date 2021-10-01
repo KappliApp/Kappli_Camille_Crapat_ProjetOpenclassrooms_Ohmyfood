@@ -10,7 +10,7 @@
     position: relative;
     top: -35px;
     border-radius: 35px 35px 0 0;
-    @include base(100%, auto, 0, 35px 15px 15px 15px);
+    @include base(100%, auto, 0, 35px 15px 35px 15px);
     @include flex(column, space-between, center, nowrap);
     background-color: map-get($color-background, section);
     &__heading{
@@ -66,19 +66,36 @@
     }
     .menu{
         overflow: hidden;
+        cursor: pointer;
         @include base(100%, 70px, 14px 0 0 0, 10px);
         background-color: map-get($color-basic, white);
         @include border(20px);
         &__information{
             @include flex(row, space-between, center, nowrap);
             &__price{
+                @include base (10%, auto, 0, 0);
                 margin: 0 10px 0 10px;
                 font-weight: map-get($font-weight, bold);
             }
             &__information{
+                @include base (auto, auto, 0, 0);
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
+            }
+            &__checked{
+                @include base(70px, 70px, 0 0 0 10px, 0);
+                position: relative;
+                top: -58px;
+                left: 100%;
+                background-color: $color-tertiary;
+                line-height: 70px;
+                text-align: center;
+                &__ico{
+                    font-size: 1.5em;
+                    transition: transform 450ms ease-in-out;
+                    color: map-get($color-basic, white);
+                }
             }
         }
         h3{
@@ -101,32 +118,4 @@
         background-color: $color-tertiary;
     }
     
-}
-.menu:hover > .menu__checked{
-    transform: translateX(-100%);
-    cursor: pointer;
-}
-.menu:hover > .menu__checked > .menu__checked__ico{
-    transform: rotate(1turn);
-}
-.menu:hover > .menu__information > .menu__information__price{
-    transform: translateX(-220%);
-}
-.menu__information__price{
-    transition: transform 450ms ease-in-out;
-}
-.menu__checked{
-    transition: transform 450ms ease-in-out;
-    @include base(70px, 70px, 0 0 0 10px, 0);
-    position: relative;
-    top: -58px;
-    left: 100%;
-    background-color: $color-tertiary;
-    line-height: 70px;
-    text-align: center;
-    &__ico{
-        font-size: 1.5em;
-        transition: transform 450ms ease-in-out;
-        color: map-get($color-basic, white);
-    }
 }
