@@ -123,6 +123,18 @@
                 }
             }
         }
+        &--animation--1{
+            opacity: 0;
+            animation: advent 250ms linear both 0ms;
+        }
+        &--animation--2{
+            opacity: 0;
+            animation: advent 250ms linear both 200ms;
+        }
+        &--animation--3{
+            opacity: 0;
+            animation: advent 250ms linear both 400ms;
+        }
     }
     .border{
         @include base (13%, 3px, 8px 0 0 0, 0);
