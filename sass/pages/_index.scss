@@ -61,7 +61,7 @@
         @include flex(column, space-between, center, nowrap);
         @include base(auto, 15.625em, 1.875em 0 0 0, 0);
         &__instruction{
-            @include flex(row, none, center, nowrap);
+            @include flex(row, start, center, nowrap);
             @include base (80%, 70px, 0 auto, 0);
             background-color: map-get($color-background, section);
             @include border(20px);
@@ -138,11 +138,11 @@
         height: 1100px;
         @include flex(column, space-between, center, nowrap);
         @include desktop-only{
-            @include flex(row, space-between, space-between, wrap);
+            @include flex(row, space-between, center, wrap);
             @include base(auto,600px, 0, 0);
         }
         @include tablet-only{
-            @include flex(row, space-between, space-between, wrap);
+            @include flex(row, space-between, center, wrap);
             @include base(auto,600px, 0, 0);
         }
         
@@ -179,7 +179,7 @@
             a{
                 @include base(auto, 75px, auto 0, 0);
                 .restaurant__description{
-                    @include base (100%, 55px, 0, auto);
+                    @include base (100%, 55px, 0, 0);
                     color: map-get($color-basic, black);
                     p{
                         font-size: $font-size-basic;
@@ -194,7 +194,7 @@
             .restaurant__heart{
                 @include flex (row, center, center, nowrap);
                 position: relative;
-                @include base(10%, auto, 0, auto);
+                @include base(10%, auto, 0, 0);
             }
         }
         &:hover{

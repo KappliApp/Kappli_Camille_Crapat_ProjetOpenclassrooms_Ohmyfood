@@ -32,7 +32,7 @@
     &__heart{
         @include flex (row, center, center, nowrap);
         position: relative;
-        @include base(5%, auto, auto, auto);
+        @include base(5%, auto, auto, 0);
     }
     
 }
