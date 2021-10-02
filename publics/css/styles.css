@@ -632,7 +632,7 @@ button:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
-.gridRestaurant .restaurant span {
+.gridRestaurant .restaurant--news {
   display: inline-block;
   position: relative;
   top: -94%;
