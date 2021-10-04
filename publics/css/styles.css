@@ -707,11 +707,12 @@ button:hover {
     flex-wrap: nowrap;
   }
 }
-.restaurantsPage__heading h1 {
+.restaurantsPage__heading h4 {
+  font-size: 1.375em;
   margin: 0;
 }
 @media screen and (min-width: 1350px) {
-  .restaurantsPage__heading h1 {
+  .restaurantsPage__heading h4 {
     margin-right: 25px;
   }
 }

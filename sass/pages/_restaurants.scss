@@ -19,7 +19,8 @@
             @include flex(row, center, center, nowrap);
         }
         margin-bottom: 45px;
-        h1{
+        h4{
+            font-size: $font-size-heart;
             margin: 0;
             @include desktop-only{
                 margin-right: 25px;
