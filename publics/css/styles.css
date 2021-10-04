@@ -576,7 +576,7 @@ button:hover {
   left: 0;
   width: 100%;
   height: 175px;
-  margin: 0;
+  margin: -30px 0 0 0;
   padding: 0;
   overflow: hidden;
 }
@@ -635,8 +635,9 @@ button:hover {
 .gridRestaurant .restaurant--news {
   display: inline-block;
   position: relative;
-  top: -94%;
+  top: 5%;
   left: 72%;
+  z-index: 2;
   width: 25%;
   height: 30px;
   margin: 0;
