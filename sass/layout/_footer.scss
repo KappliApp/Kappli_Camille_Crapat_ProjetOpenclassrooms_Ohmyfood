@@ -1,5 +1,5 @@
 footer{
-    @include base(100%, auto, 0, 25px 20px);
+    @include base(100%, auto, 0, 1.563em 1.25em);
     background-color: map-get($color-background, footer);
     color: map-get($color-basic,white);
     @include desktop-only{
@@ -9,7 +9,7 @@ footer{
         text-align: center;
     }
     ul{
-        @include base (auto, auto, 20px 0 0 0, 0);
+        @include base (auto, auto, 1.25em 0 0 0, 0);
         @include desktop-only{
             @include flex(row, space-around, center, nowrap);
         }
@@ -17,7 +17,7 @@ footer{
             @include flex(row, space-around, center, nowrap);
         }
         li{
-            margin-top: 8px;
+            margin-top: 0.5em;
         }
         a{
             color: map-get($color-basic,white);

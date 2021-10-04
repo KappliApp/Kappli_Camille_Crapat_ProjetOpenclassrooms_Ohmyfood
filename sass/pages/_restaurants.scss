@@ -1,5 +1,5 @@
 .restaurantImg{
-    @include base(100%, 250px, 0, 0);
+    @include base(100%, 15.625em, 0, 0);
     overflow: hidden;
     img{
         width: 100%;
@@ -9,7 +9,7 @@
 .restaurantsPage{
     position: relative;
     border-radius: 35px 35px 0 0;
-    @include base(100%, auto, -35px 0 0 0, 35px 15px 35px 15px);
+    @include base(100%, auto, -2.188em 0 0 0, 2.188em 0.938em 2.188em 0.938em);
     @include flex(column, space-between, center, nowrap);
     background-color: map-get($color-background, section);
     &__heading{
@@ -18,12 +18,12 @@
         @include desktop-only{
             @include flex(row, center, center, nowrap);
         }
-        margin-bottom: 45px;
+        margin-bottom: 2.813em;
         h4{
             font-size: $font-size-heart;
             margin: 0;
             @include desktop-only{
-                margin-right: 25px;
+                margin-right: 1.563em;
             }
         }
         p{
@@ -62,12 +62,12 @@
         color: darken(map-get($color-background, section), 30%);
     }
     .menus{
-        @include base(100%, auto, 0 0 40px 0, 0);
+        @include base(100%, auto, 0 0 2.5em 0, 0);
     }
     .menu{
         overflow: hidden;
         cursor: pointer;
-        @include base(100%, 70px, 14px 0 0 0, 10px);
+        @include base(100%, 4.375em, 0.875em 0 0 0, 0.625em);
         background-color: map-get($color-basic, white);
         @include border(20px);
         @include flex(row, space-between, center, nowrap);
@@ -75,7 +75,7 @@
             align-self: flex-end;
             text-align: center;
             @include base (10%, auto, 0, 0);
-            margin: 0 10px 0 10px;
+            margin: 0 0.625em 0 0.625em;
             font-weight: map-get($font-weight, bold);
         }
         &__information{
@@ -94,7 +94,7 @@
                 text-overflow: ellipsis;}
         }
         &__checked{
-            @include base(30%, 70px, 0, 0);
+            @include base(30%, 4.375em, 0, 0);
             position: relative;
             left: 10px;
             max-width: 0;
@@ -113,7 +113,7 @@
         }
         p{            
             font-size: 1em;
-            margin: 6px 0 0 0;
+            margin: 0.375em 0 0 0;
         }
         &:hover{
             .menu__checked{
@@ -137,12 +137,12 @@
         }
     }
     .border{
-        @include base (13%, 3px, 8px 0 0 0, 0);
+        @include base (13%, 0.188em, 0.5em 0 0 0, 0);
         @include desktop-only{
-            @include base (8%, 3px, 8px 0 0 0, 0);
+            @include base (8%, 0.188em, 0.5em 0 0 0, 0);
         }
         width: 13%;
-        height: 3px;
+        height: 0.188em;
         background-color: $color-tertiary;
     }
     
