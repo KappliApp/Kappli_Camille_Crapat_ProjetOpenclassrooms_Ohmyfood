@@ -77,14 +77,11 @@
                 text-align: center;
             }
             &:hover{
-                @include desktop-only{
-                    background-color: map-get($color-background, instructions);
-                    cursor: pointer;
-                }
+                background-color: map-get($color-background, instructions);
+                cursor: pointer;
+                
                 .instructions__instruction__list__ico{
-                    @include desktop-only{
-                        color: $color-primary;
-                    }
+                    color: $color-primary;
                 }
             }
             &__list{
@@ -97,22 +94,6 @@
                     font-size: $font-size-icone;
                     color: darken(map-get($color-basic,gray), 50%);
                 }
-                &__ico--purple{
-                    @include smartphone-only{
-                        color: $color-primary;
-                    }
-                    @include tablet-only{
-                        color: $color-primary;
-                    }
-                }
-                }
-                &--purpleBackground{
-                    @include smartphone-only{
-                        background-color: map-get($color-background, instructions);
-                    }
-                    @include tablet-only{
-                        background-color: map-get($color-background, instructions);
-                    }
                 }
         
         }
