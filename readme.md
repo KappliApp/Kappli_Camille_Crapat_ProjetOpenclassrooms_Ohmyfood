@@ -24,10 +24,10 @@ que vous établissez avec le CTO, Paul.
 
 #### Maquettes Smartphone : 
 ##### Maquette Accueil :
-https://www.kappli.eu/ohmyfood/maquettes/Home%20-%20Smartphone.png
+https://data.kappli.eu/Kappli_Camille_Crapat_ProjetOpenclassrooms_Ohmyfood/maquettes/Ohmyfood_Home_Smartphone
 
 ##### Maquette Menu : 
-https://www.kappli.eu/ohmyfood/maquettes/A%20la%20fran%c3%a7aise%20-%20Smartphone.png
+https://data.kappli.eu/Kappli_Camille_Crapat_ProjetOpenclassrooms_Ohmyfood/maquettes/Ohmyfood_Menu_Smartphone
 
 Pour ce projet, vous versionnez tout votre code sur Github avec des commits réguliers pour suivre sonavancement et publier le site en ligne plus facilement. </br></br>
 
@@ -35,7 +35,7 @@ Vous avez désormais tous les éléments pour construire ce site mobile. Vous vo
 
 ### Cahier des charges 
 
-https://www.kappli.eu/ohmyfood/cahier%20des%20charges/Cahier%20des%20charges.pdf
+https://data.kappli.eu/Kappli_Camille_Crapat_ProjetOpenclassrooms_Ohmyfood/cahier_des_charges/Ohmyfood.pdf
 
 ### Stack utilisée :
 - HTML
@@ -43,7 +43,7 @@ https://www.kappli.eu/ohmyfood/cahier%20des%20charges/Cahier%20des%20charges.pdf
 - SASS
 
 ### Autres informations
-- Voir le résultat de ce projet : https://www.kappli.eu/ohmyfood/
+- Voir le résultat de ce projet : https://ohmyfood.kappli.eu/
 - Profil linkedin : https://www.linkedin.com/in/camille-crapat-399816214/
 - Portfolio : https://www.kappli.eu
 - Github : https://github.com/KappliApp/
