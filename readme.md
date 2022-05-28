@@ -22,10 +22,10 @@ Vous décidez alors, avec l’équipe, que le site contiendra 4 menus dans un pr
 
 #### Maquettes Smartphone : 
 ##### Maquette Accueil :
-https://data.kappli.eu/Kappli_Camille_Crapat_ProjetOpenclassrooms_Ohmyfood/maquettes/Ohmyfood_Home_Smartphone
+https://data.kappli.eu/ohmyfood/maquettes/ohmyfood_home_smartphone.png
 
 ##### Maquette Menu : 
-https://data.kappli.eu/Kappli_Camille_Crapat_ProjetOpenclassrooms_Ohmyfood/maquettes/Ohmyfood_Menu_Smartphone
+https://data.kappli.eu/ohmyfood/maquettes/ohmyfood_restaurant_smartphone.png
 
 Pour ce projet, vous versionnez tout votre code sur Github avec des commits réguliers pour suivre son avancement et publier le site en ligne plus facilement. </br></br>
 
@@ -33,7 +33,7 @@ Vous avez désormais tous les éléments pour construire ce site mobile. Vous vo
 
 ### Cahier des charges 
 
-https://data.kappli.eu/Kappli_Camille_Crapat_ProjetOpenclassrooms_Ohmyfood/cahier_des_charges/Ohmyfood.pdf
+https://data.kappli.eu/ohmyfood/brief/ohmyfood_brief.pdf
 
 ### Stack utilisée :
 - HTML
